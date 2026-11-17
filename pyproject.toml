@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solerita"
+version = "1.0.0"
+description = "Parametrize ligands and modified residues for AMBER, one tutorial step at a time"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+solerita = "solerita.cli:main"
+
+[tool.setuptools]
+packages = ["solerita"]
+
+[tool.setuptools.package-data]
+solerita = ["data/*.cif"]

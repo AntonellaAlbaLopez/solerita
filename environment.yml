@@ -1,0 +1,13 @@
+# Everything the class needs, in one environment:
+#     conda env create -f environment.yml
+#     conda activate solerita
+#     solerita --check
+name: solerita
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ambertools
+  - pip
+  - pip:
+      - .
